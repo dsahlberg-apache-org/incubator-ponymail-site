@@ -225,6 +225,13 @@ or
 Usage:
 `GET /api/mbox.lua?list=issues@ponymail.apache.org&date=2016-06`
 
+Optional qualifiers include:
+- &header_from=$email
+- &header_subject=$subject_words
+- &header_body=$body_words
+
+Can also use various [timespan](#Timespans) values
+
 Response example:
 
 ~~~
