@@ -37,7 +37,7 @@ Our primary communication interface is - you guessed it - mailing lists!<br/>
 </table>
 
 ## Issue tracker ##
-We currently use GitHub Issues for tracking bugs and improvements: [https://github.com/apache/incubator-ponymail/issues](https://github.com/apache/incubator-ponymail/issues)
+We currently use GitHub Issues for tracking bugs and improvements: [https://github.com/apache/incubator-ponymail-foal/issues](https://github.com/apache/incubator-ponymail-foal/issues)
 
 ## IRC ##
 We are also on IRC, if you fancy a quick chat. You can find us in #PonyMail on irc.libera.chat.
