@@ -23,6 +23,7 @@ jobs:
         python3 generate.py
         cd ..
         git status
-        git acm "Commit build products"
+        git add content
+        git commit -m "Commit build products"
       # env: # for gh
       #   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
