@@ -243,6 +243,8 @@ TBA
 Usage:
 `GET /api/atom.lua(?list=$lid|?mid=$mid)`
 
+**Not available in Ponymail Foal**
+
 Parameters: (cookie may be required)
   - $lid: the list id, e.g. dev@ponymail.apache.org
   - $mid: The email ID (Permalink)
