@@ -5,6 +5,7 @@ on:
   push:
     paths:
     - 'source/**/*'
+    - '.github/workflows/build-site.yml'
 
 permissions:
   contents: write
@@ -27,5 +28,6 @@ jobs:
         git status
         git add content
         git commit -m "Commit build products"
+        git push
       # env: # for gh
       #   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
