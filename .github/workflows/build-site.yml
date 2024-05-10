@@ -1,0 +1,28 @@
+name: Build site
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+    - 'source/**/*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Installs
+      run: |
+        sudo pip3 install markdown
+    - name: Build site
+      run: |
+        cd source
+        python3 generate.py
+        cd ..
+        git status
+        git acm "Commit build products"
+      # env: # for gh
+      #   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
