@@ -241,7 +241,7 @@ TBA
 ### Get ATOM data for list or email
 
 Usage:
-`GET /api/atom/lua(?list=$lid|?mid=$mid)`
+`GET /api/atom.lua(?list=$lid|?mid=$mid)`
 
 Parameters: (cookie may be required)
   - $lid: the list id, e.g. dev@ponymail.apache.org
