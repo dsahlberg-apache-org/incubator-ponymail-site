@@ -33,4 +33,4 @@ jobs:
         else
           echo "No change"
           true # ensure step is successful
-      fi
+        fi
