@@ -27,7 +27,10 @@ jobs:
         git config --global user.name "Ponymail PPMC"
         git status
         git add content
-        git commit -m "Commit build products"
-        git push
-      # env: # for gh
-      #   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if git commit -m "Commit build products"
+        then
+          git push
+        else
+          echo "No change"
+          true # ensure step is successful
+      fi
