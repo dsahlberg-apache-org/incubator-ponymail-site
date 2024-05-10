@@ -1,5 +1,7 @@
 # Installing Pony Mail #
 
+**These instructions are out of date.
+They have yet to be updated for the Foal version line**
 
 If your distro is on this list, please refer to that specific document
 for detailed package installation instructions:
