@@ -12,8 +12,8 @@ The MID is used to insert the document in the database, and can be used to fetch
 
 ### Database design
 The mails are stored in two separate ES indexes:
-* "mbox" - this stores information about the document, plus the parsed content, and is used for searching and summary displays.
-* "mbox_source" - this is used to store the raw content of the document.
+- "mbox" - this stores information about the document, plus the parsed content, and is used for searching and summary displays.
+- "mbox_source" - this is used to store the raw content of the document.
 The two versions of the document are linked by using the same MID.
 
 ### Requirements for the MID
