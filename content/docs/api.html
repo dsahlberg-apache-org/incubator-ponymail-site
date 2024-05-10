@@ -238,6 +238,11 @@ or
 <h3 id='fetchingamonthsdataasanmboxfile'>Fetching a month's data as an mbox file<a href='#fetchingamonthsdataasanmboxfile' style='color: rgba(0,0,0,0);'>&para;</a></h3>
 <p>Usage:
 <code>GET /api/mbox.lua?list=issues@ponymail.apache.org&amp;date=2016-06</code></p>
+<p>Optional qualifiers include:
+- &amp;header_from=$email
+- &amp;header_subject=$subject_words
+- &amp;header_body=$body_words</p>
+<p>Can also use various <a href="#Timespans">timespan</a> values</p>
 <p>Response example:</p>
 <pre>
 TBA
@@ -246,6 +251,7 @@ TBA
 <h3 id='getatomdataforlistoremail'>Get ATOM data for list or email<a href='#getatomdataforlistoremail' style='color: rgba(0,0,0,0);'>&para;</a></h3>
 <p>Usage:
 <code>GET /api/atom.lua(?list=$lid|?mid=$mid)</code></p>
+<p><strong>Not available in Ponymail Foal</strong></p>
 <p>Parameters: (cookie may be required)
   - $lid: the list id, e.g. dev@ponymail.apache.org
   - $mid: The email ID (Permalink)</p>
@@ -281,7 +287,7 @@ TBA
             <a class="item" target="_blank" href="https://www.apache.org/foundation/thanks.html">Thanks<span></span></a><br/>
             <a class="item" target="_blank" href="https://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a><br/>
             <a class="item" target="_blank" href="https://www.apache.org/security/">Security<span></span></a><br/>
-            <a class="item" target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0">License<span></span></a><br/>
+            <a class="item" target="_blank" href="https://www.apache.org/licenses/">License<span></span></a><br/>
 </div>
 </div>
 </body></html>

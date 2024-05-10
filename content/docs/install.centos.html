@@ -85,10 +85,11 @@ make
 sudo make altinstall
 </pre>
 
-<p>Install the required Python 3 modules:
+<p>Install the required Python 3 modules:</p>
 <pre>
 sudo pip3.4 install elasticsearch formatflowed chardet netaddr
-</pre></p>
+</pre>
+
 <p>Install ElasticSearch:</p>
 <pre>
 sudo yum install -y java-1.7.0-openjdk-headless
@@ -117,17 +118,19 @@ sudo sudo /bin/systemctl enable elasticsearch.service
 sudo /etc/init.d/elasticsearch start
 </pre>
 
-<p>Check out a copy of Pony Mail:
+<p>Check out a copy of Pony Mail:</p>
 <pre>
 cd /var/www
 git clone https://github.com/apache/incubator-ponymail-foal.git
-</pre></p>
-<p>Set up Pony Mail:
+</pre>
+
+<p>Set up Pony Mail:</p>
 <pre>
 cd /var/www/ponymail/tools
 python3.4 setup.py
 [... answer questions asked by the setup script ...]
-</pre></p>
+</pre>
+
 <p>Set up Apache httpd by adding, for example, the following virtual host configuration:
 This differs from the normal installation (because of CentOS specifics), so beware</p>
 <pre>
@@ -179,7 +182,7 @@ much more.</p>
             <a class="item" target="_blank" href="https://www.apache.org/foundation/thanks.html">Thanks<span></span></a><br/>
             <a class="item" target="_blank" href="https://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a><br/>
             <a class="item" target="_blank" href="https://www.apache.org/security/">Security<span></span></a><br/>
-            <a class="item" target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0">License<span></span></a><br/>
+            <a class="item" target="_blank" href="https://www.apache.org/licenses/">License<span></span></a><br/>
 </div>
 </div>
 </body></html>

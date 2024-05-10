@@ -49,10 +49,11 @@
 sudo apt-get install apache2 git lua-cjson lua-sec lua-socket python3 python3-pip
 </pre>
 
-<p>Install the required Python 3 modules:
+<p>Install the required Python 3 modules:</p>
 <pre>
 sudo pip3 install elasticsearch formatflowed netaddr
-</pre></p>
+</pre>
+
 <p>Install ElasticSearch:</p>
 <pre>
 sudo apt-get install openjdk-7-jre-headless
@@ -61,22 +62,24 @@ echo "deb http://packages.elastic.co/elasticsearch/1.7/debian stable main" | sud
 sudo apt-get update && sudo apt-get install elasticsearch
 </pre>
 
-<p>Check out a copy of Pony Mail:
+<p>Check out a copy of Pony Mail:</p>
 <pre>
 cd /var/www
 sudo git clone https://github.com/apache/incubator-ponymail-foal.git
-</pre></p>
+</pre>
+
 <p>Start up ElasticSearch:</p>
 <pre>
 sudo service elasticsearch start
 </pre>
 
-<p>Set up Pony Mail:
+<p>Set up Pony Mail:</p>
 <pre>
 cd /var/www/ponymail/tools
 sudo python3 setup.py
 [... answer questions asked by the setup script ...]
-</pre></p>
+</pre>
+
 <p>Set up Apache httpd by adding, for example, the following virtual host configuration:</p>
 <pre>
 <VirtualHost *:80>
@@ -126,7 +129,7 @@ much more.</p>
             <a class="item" target="_blank" href="https://www.apache.org/foundation/thanks.html">Thanks<span></span></a><br/>
             <a class="item" target="_blank" href="https://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a><br/>
             <a class="item" target="_blank" href="https://www.apache.org/security/">Security<span></span></a><br/>
-            <a class="item" target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0">License<span></span></a><br/>
+            <a class="item" target="_blank" href="https://www.apache.org/licenses/">License<span></span></a><br/>
 </div>
 </div>
 </body></html>

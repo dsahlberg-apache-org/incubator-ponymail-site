@@ -109,18 +109,19 @@ is installed beforehand.</p>
 <h2 id='munginglistids'>Munging list IDs<a href='#munginglistids' style='color: rgba(0,0,0,0);'>&para;</a></h2>
 <p>If you need to rewrite list IDs on the fly as emails come in, you can use the debug.cropout 
 setting for this (in <code>ponymail.cfg</code>). </p>
-<p>You can either use it to just crop away something:
+<p>You can either use it to just crop away something:</p>
 <pre>
  [debug]
   # Remove 'foo' from all list IDs
   cropout:  foo
-</pre></p>
-<p>Or you can use it as a regex substitution:
+</pre>
+
+<p>Or you can use it as a regex substitution:</p>
 <pre>
  [debug]
-  #Replace '<em>.bar.tld' with '</em>.blorg.bar.tld'
-  cropout:  &lt;([a-z]+).bar.tld&gt; &lt;\1.blorg.bar.tld&gt;
-</pre></p>
+  #Replace '*.bar.tld' with '*.blorg.bar.tld'
+  cropout:  <([a-z]+)\.bar\.tld> <\1.blorg.bar.tld>
+</pre>
 <div style="display: inline-block; background: #BBB; margin: -10px; padding: 10px;">
     <h4><a id="disclaimer"></a>Disclaimer</h4>
 <div style="width: 65%; float: left;">
@@ -146,7 +147,7 @@ setting for this (in <code>ponymail.cfg</code>). </p>
             <a class="item" target="_blank" href="https://www.apache.org/foundation/thanks.html">Thanks<span></span></a><br/>
             <a class="item" target="_blank" href="https://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a><br/>
             <a class="item" target="_blank" href="https://www.apache.org/security/">Security<span></span></a><br/>
-            <a class="item" target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0">License<span></span></a><br/>
+            <a class="item" target="_blank" href="https://www.apache.org/licenses/">License<span></span></a><br/>
 </div>
 </div>
 </body></html>
