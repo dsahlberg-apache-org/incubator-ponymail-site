@@ -24,7 +24,7 @@ You will need the following software installed on your machine:
 
 ## Download and Install ##
 
-- Download the git repo: `git clone https://github.com/apache/incubator-ponymail.git`
+- Download the git repo: `git clone https://github.com/apache/incubator-ponymail-foal.git`
 - Start ElasticSearch on the machine it needs to run on.
 - Run setup.py in the `tools` dir:
 ```
@@ -34,7 +34,7 @@ You will need the following software installed on your machine:
 ```
 - Edit `site/js/config.js` to suit your needs (usually very little editing is needed)
 - Set up the appropriate authorisation for private lists. For examples, see:
-  https://github.com/apache/incubator-ponymail/tree/master/aaa_examples
+  https://github.com/apache/incubator-ponymail-foal/tree/master/aaa_examples
 
 
 
