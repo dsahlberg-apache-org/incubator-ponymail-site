@@ -20,6 +20,7 @@ jobs:
         sudo pip3 install markdown
     - name: Build site
       run: |
+        find content -name '*.html' -delete # Ensure deletions are picked up
         cd source
         python3 generate.py
         cd ..
