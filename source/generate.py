@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import markdown, codecs, os, sys, re, time, io
+import markdown, codecs, os, re, io
 
 """
 Script to process the markdown files:
