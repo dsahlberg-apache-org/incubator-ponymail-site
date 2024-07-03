@@ -207,6 +207,8 @@ Response example:
 Usage:
 `GET /api/notifications.lua[?seen=$mid]`
 
+**Not available in Ponymail Foal**
+
 Parameters: (cookie required)
   - $mid: id of the message to be marked as having been seen
 
