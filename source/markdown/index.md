@@ -19,7 +19,7 @@ and undergoing Incubation at the Apache Software Foundation (ASF).
 
 ![N-grams](images/demo_ngrams.png)
 
-See [https://lists.apache.org.org](https://lists.apache.org) for a live demo;
+See [https://lists.apache.org](https://lists.apache.org) for a live demo;
 Pony Mail is currently running on the full mail archives of all Apache projects.
 
 Pony Mail works in both public, private and mixed-mode, allowing you
